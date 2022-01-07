@@ -11,4 +11,3 @@ function Book(title, author, pages, read_or_not){
 
 const hobbit = new Book('The hobbit', 'JR Tolken', 295, 'not read yet');
 console.log(hobbit.info());
-
