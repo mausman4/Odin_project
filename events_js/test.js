@@ -1,4 +1,4 @@
-function alertFunction(){
+/*function alertFunction(){
     alert("This alert was triggered");
 }
 
@@ -9,11 +9,22 @@ btn.onclick = alertFunction;
 
 //event listener
 const btn3 = document.querySelector('#btn-3');
-/*
+
 btn3.addEventListener('click', () => {
     alert("You've woken me up!");
 })
+
+
+btn3.addEventListener('click', function(e){
+    e.target.style.background = 'blue';
+});
 */
 
-btn3.addEventListener('click', alertFunction)
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) =>{
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
 
